@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Career guidance</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- css links -->
+  <link rel="stylesheet" href="careerstylesheet.css">
+  <link rel="stylesheet" href="faq.css">
+  <!-- icons links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&diaplay=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="home-sec mb-5">
+    <header class="header">
+      <div class="container">
+        <nav class="main-nav d-flex justify-content-between align-items-center ">
+          <img src="logo.png" class="pl-5" style="width: 180px;" alt="vcmb">
+          <div>
+            <ul class="d-flex justify-content-between align-items-center list-unstyled pt-3">
+              <li class="mx-4"><a href="#" class="text-decoration-none">Home</a></li>
+              <li class="mx-4"><a href="#after" class="text-decoration-none">After Class 10th</a></li>
+              <li class="mx-4"><a href="#" class="text-decoration-none">College</a></li>
+              <li class="mx-4"><a href="http://127.0.0.1:5500/quizpart.html" class="text-decoration-none">Career Assessment</a></li>
+              <li class="mx-4"><a href="#" class="text-decoration-none">About Us</a></li>
+              <li class="mx-4"><a href="#" class="text-decoration-none">Contact up</a></li>
+            </ul>
+          </div>
+          <button class="btn-login mr-4">login</button>
+          <!-- ######################################### -->
+          <div class="login-container d-flex justify-content-center align-items-center">
+            <div class="wrapper active  d-flex justify-content-center align-items-center">
+              <span class="closeicon d-flex justify-content-center align-items-center">
+                <i class="iconclose fa fa-close"></i>
+              </span>
+              <div class="form-box login">
+                <h2>Login</h2>
+                <form action="connect.php" method="post">
+                  <div class="input-box">
+                    <span class="text">Email</span>
+                    <input type="email" id="email" name="emailId" required>
+                    <label for="email"> <i class="fa fa-envelope"></i></label>
+
+                  </div>
+                  <div class="input-box">
+                    <span class="text">Password</span>
+                    <input type="password" id="pass" name="passWord" required>
+                    <label for="pass"><i class="fa fa-lock"></i></label>
+
+                  </div>
+                  <div class="remember-forgot d-flex justify-content-between">
+                    <label for="forgot"><input type="checkbox" id="forgot" name="remember_pass"> Remember me</label>
+                    <a href="#">Forgot Password ?</a>
+                  </div>
+                  <button type="submit" class="submitbtn">Login</button>
+                  <div class="register">
+                    <p class="text-center">Don't have an account ? <a href="#" class="register-link">Register</a></p>
+                  </div>
+                </form>
+              </div>
+              <div class="form-box register-box">
+                <h2>Registration</h2>
+                <form action="connect.php" method="post">
+                  <div class="input-box">
+                    <span class="text">Username</span>
+                    <input type="text" id="username" name="userName">
+                    <label for="username"> <i class="fa fa-user"></i></label>
+
+                  </div>
+                  <div class="input-box">
+                    <span class="text">Email</span>
+                    <input type="email" id="emailid" name="userEmail">
+                    <label for="emailid"> <i class="fa fa-envelope"></i></label>
+
+                  </div>
+                  <div class="input-box">
+                    <span class="text">Password</span>
+                    <input type="password" id="password" name="userPass">
+                    <label for="password"><i class="fa fa-lock"></i></label>
+
+                  </div>
+                  <div class="remember-forgot ">
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree"> I agree to the terms & conditions</label>
+
+                  </div>
+                  <button type="submit" class="submitbtn">Login</button>
+                  <div class="register">
+                    <p class="text-center">Already have an account ? <a href="#" class="login-link">Login</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="hero-sec d-flex justify-content-between align-items-center w-100 px-5 pt-5">
+      <div class="headings w-50">
+        <h1 class="text-capitalize">Your path to success start here</h1>
+        <p>Welcome to Your Career Compass, where we provide comprehensive and detailed guidance to help you navigate
+          every stage of your career journey.May your career be as fulfilling as it is successful, leading you to new
+          heights of achievement and satisfaction.</p>
+      </div>
+      <div class="hero-img">
+        <img src="3dpic-removebg-preview2.png" alt="">
+      </div>
+    </div>
+    <div class="card-box" id="after">
+      <div class="w-100 d-flex flex-column justify-content-center text-center md-heading">
+        <div><span class="bright-h">For the brightest future</span></div>
+        <h2 class=" main-heading text-capitalize">you must follow your passion</h2>
+        <p>Remember,while following your passion is important, it's also essential to balance it with practical
+          considerations and resposibilities in life. Passion can be a powerful motivator, but it should be
+          combined with dedication and hard work to achieve your goals.
+        </p>
+      </div>
+
+      <div class=" d-flex justify-content-between px-5 bg-white " id="after">
+        <div class="card d-flex flex-column" style="border-top: 5px solid #164082;border-radius: 8px;">
+          <h3 class="subject">Mathematics</h3>
+          <p>The journey in mathematics is a personal and intellectual exploration of the vast and
+            interconnected world of mathematical concepts and ideas.</p>
+          <a href="http://127.0.0.1:5500/mathematics.html" class="more-block">Learn More</a>
+        </div>
+        <div class="card d-flex flex-column" style="border-top: 5px solid #164082;border-radius: 8px;">
+          <h3 class="subject">Biology</h3>
+          <p>The journey in biology is not just about acquiring knowledge.it is also about developing deep appreciation
+            for the complexity and diversity of life.</p>
+          <a href="http://127.0.0.1:5500/biology.html" class="more-block">Learn More</a>
+        </div>
+        <div class="card d-flex flex-column" style="border-top: 5px solid #164082;border-radius: 8px;">
+          <h3 class="subject">Commerce</h3>
+          <p>The journey in commerce is not just about acquiring knowledge; it is also about developing a mindset that
+            is entrepreneurial and innovative.</p>
+          <a href="http://127.0.0.1:5500/commerce.html" class="more-block">Learn More</a>
+        </div>
+        <div class="card d-flex flex-column" style="border-top: 5px solid #164082;border-radius: 8px;">
+          <h3 class="subject">Art</h3>
+          <p>Embarking on a journey in the world of art is deeply personal & transformative experience. It is journey of
+            self-discovery, creative exploration, & continuous learning.</p>
+          <a href="http://127.0.0.1:5500/art.html" class="more-block">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="imp-key d-flex justify-content-center">
+      <div class="points d-flex justify-content-center">
+        <div class="list-box d-flex flex-column justify-content-center align-items-center bg-white  ">
+          <p class="points-data">
+            <spna class="point-heading">Passion and Interest:</spna> Pursuing a career that aligns with your passions
+            and interests can lead
+            to greater job satisfaction and motivation.
+          </p>
+          <p class="points-data">
+            <spna class="point-heading">Skills and Expertise:</spna> Developing valuable skills and expertise in your
+            field can make you
+            more competitive and open up more opportunities for advancement.
+          </p>
+          <p class="points-data">
+            <spna class="point-heading">Adaptability:</spna> Being able to adapt to new technologies, trends, and work
+            environments can help
+            you thrive in a dynamic job market.
+          </p>
+          <p class="points-data">
+            <spna class="point-heading">Networking:</spna> Building and maintaining a strong professional network can
+            provide you with
+            valuable opportunities, insights, and support throughout your career.
+          </p>
+          <p class="points-data">
+            <spna class="point-heading">Work-Life Balance:</spna> Striking a balance between work and personal life is
+            important for
+            maintaining overall well-being and job satisfaction.
+          </p>
+          <p class="points-data">
+            <spna class="point-heading">Goal Setting:</spna> Setting clear, achievable goals can help you stay focused
+            and motivated in your
+            career.
+          </p>
+
+        </div>
+        <div class="text-white w-50 p-5 d-flex flex-column justify-content-center align-items-center">
+          <h4 class="key-heading mb-5 px-3 py-2 text-center bg-white ">Here are some key points that are important for a
+            successful career</h4>
+          <img src="list.webp" class="w-50" alt="">
+          <p></p>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="py-4">
+      <h1 class="text-center text-body">FAQ'S <img src="faqpic-removebg-preview.png" style="width: 120px;" alt=""></h1>
+
+    </div>
+    <div class="faq-sec d-flex flex-wrap justify-content-around align-items-center">
+      <!-- <h1>FAQ'S</h1> -->
+      <div class="wrapperup">
+        <button class="toggle">
+          What career options are suitable for me ?
+          <i class="fa fa-plus"></i>
+        </button>
+        <div class="faq-content">
+          <p>Our platform offers personalized career assessments and exploration tools to help you discover suitable
+            career paths based on your skills, interests, and goals.</p>
+        </div>
+      </div>
+      <div class="wrapperup">
+        <button class="toggle">
+          What educational or certification programs should I consider for my desired career ?
+          <i class="fa fa-plus"></i>
+        </button>
+        <div class="faq-content">
+          <p>Discover relevant educational programs, certifications, and training courses to enhance your skills and
+            qualifications for specific career paths.</p>
+        </div>
+      </div>
+      <div class="wrapperup">
+        <button class="toggle">
+          What are the common challenges people face in their careers, and how can they overcome them?
+          <i class="fa fa-plus"></i>
+        </button>
+        <div class="faq-content">
+          <p>Find insights into common career challenges, along with actionable strategies and resources for
+            overcoming obstacles and achieving success in your career journey.</p>
+        </div>
+      </div>
+      <div class="wrapperup">
+        <button class="toggle">
+          What career paths are available based on my educational background and experience ?
+          <i class="fa fa-plus"></i>
+        </button>
+        <div class="faq-content">
+          <p>Explore potential career trajectories, job opportunities, and advancement paths tailored to your unique
+            background, skills, and experience.</p>
+        </div>
+      </div>
+      <div class="wrapperup">
+        <button class="toggle">
+          How can I stay motivated and avoid burnout in my career ?
+          <i class="fa fa-plus"></i>
+        </button>
+        <div class="faq-content">
+          <p>Discover techniques for maintaining motivation, managing stress, and preventing burnout while pursuing
+            your career goals.</p>
+        </div>
+      </div>
+      <div class="wrapperup">
+        <button class="toggle">
+          How can I access support and guidance throughout my career journey ?
+          <i class="fa fa-plus"></i>
+        </button>
+        <div class="faq-content">
+          <p>Our platform offers ongoing support, expert advice, and a community of like-minded professionals to help
+            you navigate your career journey successfully.</p>
+        </div>
+      </div>
+    </div>
+    <script src="faq.js"></script>
+  </section>
+  <!-- ====================== Footer section ===================== -->
+  <footer class="text-body pt-4 footer">
+    <div class="mx-auto text-center text-md-left">
+      <div class="d-flex justify-content-between flex-wrap text-center text-md-left position-relative f-section">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto my-auto footer-content">
+          <img src="logo.png" class="brand-logo w-75" alt="">
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mt-3 footer-content">
+          <h5 class="text-uppercase md-4 font-weight-bold text-body">Opportunities</h5>
+          <hr class="md-4" />
+          <div class="d-flex flex-column link">
+            <a href="#" class="text-body" style="text-decoration: none">College</a>
+            <a href="#" class="text-body" style="text-decoration: none">After class 10th</a>
+            <a href="#" class="text-body" style="text-decoration: none">After class 12th</a>
+            <a href="#" class="text-body" style="text-decoration: none">Career Assessment</a>
+            <!-- <a href="#" class="text-body" style="text-decoration: none"></a>
+            <a href="#" class="text-body" style="text-decoration: none">Ethnic</a> -->
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer-content">
+          <h5 class="text-uppercase md-4 font-weight-bold text-body">
+            About us
+          </h5>
+          <hr class="md-4" />
+          <p>
+            Welcome to our GoodLuck career guidance, your go-to resource for all things related to career guidance and
+            professional development. Our mission is to empower individuals to make informed career decisions and
+            navigate their professional paths with confidence.
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 mx-auto mt-3 footer-content">
+          <h5 class="text-uppercase md-4 font-weight-bold text-body">
+            Contact Us
+          </h5>
+          <hr class="md-4" />
+          <div class="d-flex flex-column">
+            <form>
+              <div class="send-box">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+              </div>
+              <div class="send-box">
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
+              </div>
+
+            </form>
+          </div>
+          <div class="row d-flex mt-2" id="icon">
+            <div class="text-center icon-sz w-100">
+              <ul class="list-unstyled list-inline d-flex justify-content-center">
+                <li class="list-inline-item">
+                  <a href="#" class="text-body"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-body"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-body"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-body"><i class="fa fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="careerguidance.js"></script>
+</body>
+</html>

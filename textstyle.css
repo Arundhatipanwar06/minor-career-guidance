@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.quiz-sec{
+    width: 50%;
+    height: 28rem;
+    background-color: gray;
+}
+.question{
+    padding: 1.6rem 0;
+    padding-left: 2.2rem;
+}
+.option{
+    list-style: none;
+    /* padding: 2rem 0; */
+}
+.option li{
+    width: 18rem;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 3rem;
+}

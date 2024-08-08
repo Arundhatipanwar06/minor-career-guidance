@@ -1,0 +1,48 @@
+
+/* body{
+    background-color: #164082;
+/* } */
+
+.faq-sec{
+    color: #fff;
+    width: 100%;
+
+}
+.wrapperup{
+    width: 40%;
+    color: #fff;
+    background-color: #164082;
+    margin-bottom: 20px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 15px 25px rgba(0,0,50,0,2);
+}
+.toggle,
+.faq-content{
+    font-family: "poppins",sans-serif;
+}
+.toggle{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
+}
+.faq-content{
+    position: relative;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 30px;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Suggestions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="college.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+          <nav class="main-nav d-flex justify-content-between align-items-center ">
+            <img src="logo.png" class="pl-5" style="width: 180px;" alt="vcmb">
+            <div>
+              <ul class="d-flex justify-content-between align-items-center list-unstyled pt-3">
+                <li class="mx-4"><a href="#" class="text-decoration-none">Home</a></li>
+                <li class="mx-4"><a href="#after" class="text-decoration-none">After Class 10th</a></li>
+                <li class="mx-4"><a href="#" class="text-decoration-none">College</a></li>
+                <li class="mx-4"><a href="http://127.0.0.1:5500/quizpart.html" class="text-decoration-none">Career Assessment</a></li>
+                <li class="mx-4"><a href="#" class="text-decoration-none">About Us</a></li>
+                <li class="mx-4"><a href="#" class="text-decoration-none">Contact up</a></li>
+                
+              </ul>
+            </div>
+            <button class="btn-login mr-4">login</button>
+            <!-- ######################################### -->
+            <div class="login-container d-flex justify-content-center align-items-center">
+              <div class="wrapper active  d-flex justify-content-center align-items-center">
+                <span class="closeicon d-flex justify-content-center align-items-center">
+                  <i class="iconclose fa fa-close"></i>
+                </span>
+                <div class="form-box login">
+                  <h2>Login</h2>
+                  <form action="connect.php" method="post">
+                    <div class="input-box">
+                      <span class="text">Email</span>
+                      <input type="email" id="email" name="emailId" required>
+                      <label for="email"> <i class="fa fa-envelope"></i></label>
+  
+                    </div>
+                    <div class="input-box">
+                      <span class="text">Password</span>
+                      <input type="password" id="pass" name="passWord" required>
+                      <label for="pass"><i class="fa fa-lock"></i></label>
+  
+                    </div>
+                    <div class="remember-forgot d-flex justify-content-between">
+                      <label for="forgot"><input type="checkbox" id="forgot" name="remember_pass"> Remember me</label>
+                      <a href="#">Forgot Password ?</a>
+                    </div>
+                    <button type="submit" class="submitbtn">Login</button>
+                    <div class="register">
+                      <p class="text-center">Don't have an account ? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                  </form>
+                </div>
+                <div class="form-box register-box">
+                  <h2>Registration</h2>
+                  <form action="connect.php" method="post">
+                    <div class="input-box">
+                      <span class="text">Username</span>
+                      <input type="text" id="username" name="userName">
+                      <label for="username"> <i class="fa fa-user"></i></label>
+  
+                    </div>
+                    <div class="input-box">
+                      <span class="text">Email</span>
+                      <input type="email" id="emailid" name="userEmail">
+                      <label for="emailid"> <i class="fa fa-envelope"></i></label>
+  
+                    </div>
+                    <div class="input-box">
+                      <span class="text">Password</span>
+                      <input type="password" id="password" name="userPass">
+                      <label for="password"><i class="fa fa-lock"></i></label>
+  
+                    </div>
+                    <div class="remember-forgot ">
+                      <input type="checkbox" id="agree" name="agree">
+                      <label for="agree"> I agree to the terms & conditions</label>
+  
+                    </div>
+                    <button type="submit" class="submitbtn">Login</button>
+                    <div class="register">
+                      <p class="text-center">Already have an account ? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+  
+    <div class="container-block d-flex flex-column justify-content-center align-items-center">
+        <h2 class="text-white py-4">Search for a College</h2>
+        <div class="searchbox d-flex justify-content-between align-items-center px-3 my-4">
+            <input type="text" id="searchInput" oninput="searchColleges(this.value)" placeholder="Type to search..."> 
+            <i class="fa fa-search"></i>
+        </div>
+        <div id="searchResults" class="bg-white">Engineering <br> biology <br> arts <br> commerce</div>
+    </div>
+     <!-- ====================== Footer section ===================== -->
+  <footer class="text-body pt-4 footer">
+    <div class="mx-auto text-center text-md-left">
+      <div class="d-flex justify-content-between flex-wrap text-center text-md-left position-relative f-section">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto my-auto footer-content">
+          <img src="logo.png" class="brand-logo w-75" alt="">
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mt-3 footer-content">
+          <h5 class="text-uppercase md-4 font-weight-bold text-body">Opportunities</h5>
+          <hr class="md-4" />
+          <div class="d-flex flex-column link">
+            <a href="#" class="text-body" style="text-decoration: none">College</a>
+            <a href="#" class="text-body" style="text-decoration: none">After class 10th</a>
+            <a href="#" class="text-body" style="text-decoration: none">After class 12th</a>
+            <a href="#" class="text-body" style="text-decoration: none">Career Assessment</a>
+            <!-- <a href="#" class="text-body" style="text-decoration: none"></a>
+            <a href="#" class="text-body" style="text-decoration: none">Ethnic</a> -->
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer-content">
+          <h5 class="text-uppercase md-4 font-weight-bold text-body">
+            About us
+          </h5>
+          <hr class="md-4" />
+          <p>
+            Welcome to our GoodLuck career guidance, your go-to resource for all things related to career guidance and
+            professional development. Our mission is to empower individuals to make informed career decisions and
+            navigate their professional paths with confidence.
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 mx-auto mt-3 footer-content">
+          <h5 class="text-uppercase md-4 font-weight-bold text-body">
+            Contact Us
+          </h5>
+          <hr class="md-4" />
+          <div class="d-flex flex-column">
+            <form>
+              <div class="send-box">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+              </div>
+              <div class="send-box">
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
+              </div>
+
+            </form>
+          </div>
+          <div class="row d-flex mt-2" id="icon">
+            <div class="text-center icon-sz w-100">
+              <ul class="list-unstyled list-inline d-flex justify-content-center">
+                <li class="list-inline-item">
+                  <a href="#" class="text-body"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-body"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-body"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-body"><i class="fa fa-whatsapp"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="careerguidance.js"></script>
+    <script src="college.js"></script>
+</body>
+
+</html>
